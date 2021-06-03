@@ -5,7 +5,7 @@ import pandas as pd
 import gpd
 
 app = Flask(__name__, static_url_path='/static')
-
+url = "https://cycle-path-finder.herokuapp.com"
 # connessione al database
 conn = pymssql.connect(
     server="213.140.22.237\SQLEXPRESS",
@@ -34,7 +34,7 @@ conn.commit()
 
 cors = CORS(app)
 
-@app.route('/')
+@app.route(f"{url}/hello")
 @cross_origin()
 def home():
     return redirect(url_for('login'))
