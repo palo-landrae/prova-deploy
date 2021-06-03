@@ -34,7 +34,7 @@ conn.commit()
 
 cors = CORS(app)
 
-@app.route(f"{url}/hello")
+@app.route(f"{url}/")
 @cross_origin()
 def home():
     return redirect(url_for('login'))
