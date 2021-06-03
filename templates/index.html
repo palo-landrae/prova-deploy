@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Palo - Cycle Path Finder</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@2.2.0/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <!--<script src="http://www.liedman.net/lrm-graphhopper/dist/lrm-graphhopper-1.2.0.js"></script>-->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <!--<div id="overlay"></div>-->
+    <div id="loading"></div>
+
+    <div id="map" class="map">
+        <div id="no_bike"></div>
+        <div id="controlContainer"></div>
+        <div id='zoombar'></div>
+    </div>
+    <span class="leaflet-routing-collapse-btn" onclick="collapse()"></span>
+
+    <script type=text/javascript src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+</body>
+
+</html>

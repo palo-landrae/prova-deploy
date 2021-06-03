@@ -1,0 +1,8 @@
+flask
+flask_cors
+git+https://github.com/rossant/ipycache.git
+pandas
+pymssql
+geopandas
+shapely
+contextily

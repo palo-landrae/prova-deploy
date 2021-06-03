@@ -1,0 +1,7 @@
+/.vscode
+/backend/__pycache__
+/backend/node_modules
+/venv
+
+/backend/static/intersect.json
+/backend/static/punti_intersect.json
